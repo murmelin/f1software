@@ -103,8 +103,8 @@ layout = dbc.Container([
 # ==========================================================  Track Position  ==================================================================================
 
         # Store to store data on completed laps
-        dcc.Store(id='lap-store', storage_type='session'),
-        dcc.Store(id='current-lap-store', storage_type='session'), 
+        dcc.Store(id='lap-store', storage_type='memory'),
+        dcc.Store(id='current-lap-store', storage_type='memory'), 
 
         # Update interval
         dcc.Interval(id='interval-component', interval=1000, n_intervals=0),
